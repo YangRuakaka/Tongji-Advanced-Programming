@@ -1,0 +1,38 @@
+#pragma once
+#define GAMELEVEL 5
+void option_A();
+void option_B();
+void option_C();
+void option_D(bool divide);
+int inputnum(bool option);
+void generatearr(int row, int column, char arr[][10]);
+void originarr(int row, int column, char arr[][10]);
+void coordinates(char* cmd, int row, int column);
+int checkvalid(char* cmd, char arr[][10], int row, int column);
+void search_and_mark(char* cmd, char arr[][10], int row, int column);
+void searcharr(char *cmd,int row, int column, char arr[][10]);
+void currentarr(int row, int column, char arr[][10]);
+void end();
+int confirmeliminate();
+int combine(int row, int column, char arr[][10]);
+void drop(int row, int column, char arr[][10]);
+bool check(int row, int column, char arr[][10]);
+void exframe(int row, int column, bool divide);
+void inframe(int row, int column, char arr[][10], bool divide);
+void mouseandkey(int row, int column, char arr[][10], bool divide, char cmd[2]);
+void inputcoordinate(char* cmd, int row, int column, char arr[][10]);
+int eliminate(int row, int column, char arr[][10], char coordinate[20]);
+void highlight(char ch_X, char ch_Y, char arr[][10], bool divide);
+void dishighlight(char old_X, char old_Y, char arr[][10], bool divide);
+void option_E(bool divide);
+void option_F(bool divide);
+bool onecombination(int row, int column, char arr[][10], bool divide, char cmd[2]);
+void markshighlight(char arr[][10], int row, int column, bool divide);
+void marksdishighlight(char arr[][10], int row, int column, bool divide);
+void droparr(int row, int column, char arr[][10]);
+void markseliminate(char arr[][10], int row, int column, bool divide);
+void movestar(int row, int column, char arr[][10], bool divide);
+void game(int row, int column, char arr[][10], bool divide, char cmd[2]);
+void option_G(bool divide);
+void reset(int row, int column, char arr[][10], bool divide, char cmd[2]);
+void centralhighlight(char ch_X, char ch_Y, char arr[][10], bool divide);
